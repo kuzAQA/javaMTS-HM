@@ -1,7 +1,8 @@
 public class Main {
   public static void main(String[] args) {
 //    fullCycle(6,6, "*");
-    zeroCycle(6,6, "*", "0");
+//    zeroCycle(6,6, "*", "0");
+    triangleCycle(6,6, "*", "0");
   }
 
   public static void fullCycle(int numberFirst, int numberSecond, String symbol) {
@@ -24,6 +25,25 @@ public class Main {
           System.out.print(symbolSecond + " ");
         }else {
           System.out.print(symbolFirst + " ");
+        }
+        if (j == numberSecond - 1) {
+          System.out.println("");
+        }
+      }
+    }
+  }
+
+  public static void triangleCycle (int numberFirst, int numberSecond, String symbolFirst, String symbolSecond) {
+    for (int i = 0; i < numberFirst; i++) {
+      for (int j = 0; j < numberSecond; j++) {
+        if (i != j) {
+          if (i > j) {
+            System.out.print(symbolSecond + " ");
+          }else {
+            System.out.print(symbolFirst + " ");
+          }
+        } else {
+          System.out.print(" ");
         }
         if (j == numberSecond - 1) {
           System.out.println("");
