@@ -1,28 +1,21 @@
 package ExtendsHomework.Task_1;
 
 public class Cat extends Animal {
-    @Override
-    public void run(double distance) {
-        if (distance > 200) {
-            System.out.println("Котик не может пробежать такое расстояние");
-        } else {
-            System.out.println("Котик пробежал!");
-        }
+
+    String name = "Кошка";
+    double maxRun = 200;
+    double maxSwim = 0;
+    double maxJump = 2;
+
+    public Cat() {
+        super.name = this.name;
+        super.maxRun = this.maxRun;
+        super.maxSwim = this.maxSwim;
+        super.maxJump = this.maxJump;
     }
 
     @Override
     public void swim(double distance) {
-        if (distance > 0) {
-            System.out.println("Котик не умеет плавать");
-        }
-    }
-
-    @Override
-    public void jumpingOverObstacles(double length) {
-        if (length > 2) {
-            System.out.println("Котик не может это перепрыгнуть");
-        } else {
-            System.out.println("Котик перепрыгнул!");
-        }
+        System.out.println(name + " не умеет плавать");
     }
 }

@@ -1,15 +1,33 @@
 package ExtendsHomework.Task_1;
 
 public class Animal {
+
+    String name = "Животное";
+    double maxRun = 1;
+    double maxSwim = 1;
+    double maxJump = 1;
+
     public void run(double distance) {
-        System.out.println("Это животное пробежало!");
+        if (distance > maxRun) {
+            System.out.println(name + " не может пробежать такое расстояние.");
+        } else {
+            System.out.println(name + " пробежала!");
+        }
     }
 
     public void swim(double distance) {
-        System.out.println("Это животное проплыло!");
+        if (distance > maxSwim) {
+            System.out.println(name + " не может проплыть такое расстояние.");
+        } else {
+            System.out.println(name + " проплыла!");
+        }
     }
 
     public void jumpingOverObstacles(double length) {
-        System.out.println("Это эивотное перепрыгнуло!");
+        if (length > maxJump) {
+            System.out.println(name + " не может прыгнуть на такую высоту");
+        } else {
+            System.out.println(name + " перепрыгнула!");
+        }
     }
 }

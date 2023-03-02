@@ -1,28 +1,21 @@
 package ExtendsHomework.Task_1;
 
 public class Bird extends Animal {
-    @Override
-    public void run(double distance) {
-        if (distance > 5) {
-            System.out.println("Птичка не может пробежать такое расстояние");
-        } else {
-            System.out.println("Птичка пробежала!");
-        }
+
+    String name = "Птичка";
+    double maxRun = 5.0;
+    double maxSwim = 0;
+    double maxJump = 0.2;
+
+    public Bird() {
+        super.name = this.name;
+        super.maxRun = this.maxRun;
+        super.maxSwim = this.maxSwim;
+        super.maxJump = this.maxJump;
     }
 
     @Override
-    public void swim(double distance) {
-        if (distance > 0) {
-            System.out.println("Птичка не умеет плавать");
-        }
-    }
-
-    @Override
-    public void jumpingOverObstacles(double length) {
-        if (length > 0.2) {
-            System.out.println("Птичка не может это перепрыгнуть");
-        } else {
-            System.out.println("Птичка перепрыгнула!");
-        }
+    public void jumpingOverObstacles(double distance) {
+        System.out.println(name + " не умеет плавать");
     }
 }
