@@ -1,4 +1,5 @@
 import static ArraysHomework.ArraysHomework.createArrDiagonal;
+import static ArraysHomework.ArraysHomework.minMaxElement;
 import static ArraysHomework.ArraysHomework.multiByTwo;
 import static CycleHomework.CycleHomework.fullCycle;
 import static CycleHomework.CycleHomework.triangleCycle;
@@ -32,5 +33,8 @@ public class Main {
 
 //        Домашняя работа массивам #2
 //        createArrDiagonal();
+
+//        Домашняя работа массивам #3
+//        minMaxElement();
     }
 }
