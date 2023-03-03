@@ -1,20 +1,14 @@
-import static ArraysHomework.ArraysHomework.multiArr;
-
-import ArraysHomework.ArraysHomework;
-import ExtendsHomework.Task_2.Cat;
-import ExtendsHomework.Task_2.Human;
-import ExtendsHomework.Task_2.Treadmill;
-import ExtendsHomework.Task_2.Trial;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
+import static ArraysHomework.ArraysHomework.createArrDiagonal;
+import static ArraysHomework.ArraysHomework.multiByTwo;
+import static CycleHomework.CycleHomework.fullCycle;
+import static CycleHomework.CycleHomework.triangleCycle;
+import static CycleHomework.CycleHomework.zeroCycle;
 
 public class Main {
 
     public static void main(String[] args) {
-/*        Домашняя работа по циклам
-        fullCycle(6,6, "*");
+//        Домашняя работа по циклам
+/*        fullCycle(6,6, "*");
         zeroCycle(6,6, "*", "0");
         triangleCycle(6,6, "*", "0");*/
 
@@ -34,8 +28,9 @@ public class Main {
 //        Домашняя работа по наследованию классов #2
 
 //        Домашняя работа массивам #1
-        multiArr();
+//        multiByTwo();
 
 //        Домашняя работа массивам #2
+//        createArrDiagonal();
     }
 }
