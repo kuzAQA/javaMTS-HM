@@ -26,6 +26,5 @@ public class ArraysHomework {
             }
         }
         Arrays.stream(arrDiagonal).map(Arrays::toString).forEach(System.out::println);
-        System.out.println(arrDiagonal.length);
     }
 }
