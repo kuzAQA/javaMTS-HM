@@ -2,9 +2,8 @@ package CollectionHomework;
 
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashSet;
 import java.util.List;
-
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
@@ -15,7 +14,7 @@ public class CollectionHomework {
         return list.stream().distinct().collect(Collectors.toList());
 
         //Вариант 2
-//        return new ArrayList<>(new HashSet<>(list));
+//        return new HashSet<>(list);
     }
 
     public static List<Integer> addOneMillion(List<Integer> million) {
@@ -25,8 +24,8 @@ public class CollectionHomework {
         return million;
     }
 
-    public static int randomNumber(int end) {
-        return (int) (Math.random() * end);
+    public static int randomNumber(int min, int max) {
+        return new Random().nextInt(max - min) + min;
     }
 
     public static String selectRandomElements(List<Integer> list) {
@@ -34,7 +33,7 @@ public class CollectionHomework {
         Date startDate = new Date();
 
         for (int i = 0; i < 100000; i++) {
-            resultList.add(list.get(randomNumber(100000)));
+            resultList.add(list.get(randomNumber(0, 100000)));
         }
         Date endDate = new Date();
         long duration = endDate.getTime() - startDate.getTime();
