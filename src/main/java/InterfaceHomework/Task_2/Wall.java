@@ -1,18 +1,15 @@
 package InterfaceHomework.Task_2;
 
-public class Wall {
+public class Wall implements Obstacle {
 
-    private final double length;
-    private final Skills[] participants;
+    private final double height;
 
-    public Wall(double length, Skills[] participants) {
-        this.length = length;
-        this.participants = participants;
+    Wall(double height) {
+        this.height = height;
     }
 
-    public void jumping() {
-        for (int i = 0; i < participants.length; i++) {
-            participants[i].jump(length);
-        }
+    @Override
+    public boolean passage(Participants participant) {
+        return participant.jump(height);
     }
 }
