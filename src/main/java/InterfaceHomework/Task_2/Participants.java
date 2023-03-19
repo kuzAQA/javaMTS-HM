@@ -18,8 +18,7 @@ abstract class Participants {
             return true;
         } else {
             System.out.printf("- %s не смог пробежать %s метров. "
-                    + "Он выбывает из соревнований :(\n",
-                name, length);
+                    + "Он выбывает из соревнований :(\n", name, length);
             return false;
         }
     }
@@ -30,8 +29,7 @@ abstract class Participants {
             return true;
         } else {
             System.out.printf("- %s не смог перепрыгнуть %s метра. "
-                    + "Он выбывает из соревнований :(\n", name,
-                height);
+                    + "Он выбывает из соревнований :(\n", name, height);
             return false;
         }
     }
