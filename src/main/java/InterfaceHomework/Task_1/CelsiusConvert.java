@@ -9,7 +9,7 @@ public class CelsiusConvert implements CelsiusConvertTo {
         } else if (scale.equals("F")) {
             return celsius * 9 / 5 + 32;
         } else {
-            throw new IllegalArgumentException("Invalid scale: " + scale);
+            throw new IllegalArgumentException("Невалидный параметр градусов: " + scale);
         }
     }
 }
