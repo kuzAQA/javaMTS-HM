@@ -1,4 +1,4 @@
-package Interfaces.Task_1;
+package Interfaces.task1;
 
 public class CelsiusConvert implements CelsiusConvertTo {
 

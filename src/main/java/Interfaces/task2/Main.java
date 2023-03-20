@@ -1,14 +1,14 @@
-package Interfaces.Task_2;
+package Interfaces.task2;
 
 import static сollection.CollectionHomework.randomNumber;
 
-import Interfaces.Task_2.models.Cat;
-import Interfaces.Task_2.models.Human;
-import Interfaces.Task_2.models.Participants;
-import Interfaces.Task_2.models.Robot;
-import Interfaces.Task_2.obstacles.Treadmill;
-import Interfaces.Task_2.obstacles.Wall;
-import Interfaces.Task_2.service.Obstacle;
+import Interfaces.task2.models.Cat;
+import Interfaces.task2.models.Human;
+import Interfaces.task2.models.Participants;
+import Interfaces.task2.models.Robot;
+import Interfaces.task2.obstacles.Treadmill;
+import Interfaces.task2.obstacles.Wall;
+import Interfaces.task2.service.Obstacle;
 import java.util.ArrayList;
 import java.util.List;
 

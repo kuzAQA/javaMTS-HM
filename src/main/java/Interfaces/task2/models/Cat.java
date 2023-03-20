@@ -1,4 +1,4 @@
-package Interfaces.Task_2.models;
+package Interfaces.task2.models;
 
 public class Cat extends Participants {
 

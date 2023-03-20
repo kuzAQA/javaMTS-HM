@@ -1,7 +1,7 @@
-package Interfaces.Task_2.obstacles;
+package Interfaces.task2.obstacles;
 
-import Interfaces.Task_2.models.Participants;
-import Interfaces.Task_2.service.Obstacle;
+import Interfaces.task2.models.Participants;
+import Interfaces.task2.service.Obstacle;
 
 public class Treadmill implements Obstacle {
 
