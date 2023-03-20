@@ -1,4 +1,4 @@
-package InterfaceHomework.Task_2;
+package InterfaceHomework.Task_2.models;
 
 public class Human extends Participants {
 

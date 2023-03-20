@@ -2,6 +2,13 @@ package InterfaceHomework.Task_2;
 
 import static CollectionHomework.CollectionHomework.randomNumber;
 
+import InterfaceHomework.Task_2.models.Cat;
+import InterfaceHomework.Task_2.models.Human;
+import InterfaceHomework.Task_2.models.Participants;
+import InterfaceHomework.Task_2.models.Robot;
+import InterfaceHomework.Task_2.obstacles.Treadmill;
+import InterfaceHomework.Task_2.obstacles.Wall;
+import InterfaceHomework.Task_2.service.Obstacle;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +19,7 @@ public class Main {
         List<Participants> listParticipants = List.of(
             new Human("Аркадий", 400, 2),
             new Robot("Бендер", 550, 5),
-            new Cat("Барсик-мяу", 450, 3)
+            new Cat("Барсик-мяу", 450, 2)
         );
         //Набор препятствий со случайной генераций значений
         List<Obstacle> listObstacles = new ArrayList<>();

@@ -1,6 +1,6 @@
-package InterfaceHomework.Task_2;
+package InterfaceHomework.Task_2.models;
 
-abstract class Participants {
+public abstract class Participants {
 
     private final String name;
     private final double maxRunDistance;
@@ -12,13 +12,13 @@ abstract class Participants {
         this.maxJumpHeight = maxJumpHeight;
     }
 
-    boolean run(double length) {
+    public boolean run(double length) {
         if (length <= maxRunDistance) {
             System.out.printf("%s успешно пробежал %s метров! :)\n", name, length);
             return true;
         } else {
             System.out.printf("- %s не смог пробежать %s метров. "
-                    + "Он выбывает из соревнований :(\n", name, length);
+                + "Он выбывает из соревнований :(\n", name, length);
             return false;
         }
     }
@@ -29,7 +29,7 @@ abstract class Participants {
             return true;
         } else {
             System.out.printf("- %s не смог перепрыгнуть %s метра. "
-                    + "Он выбывает из соревнований :(\n", name, height);
+                + "Он выбывает из соревнований :(\n", name, height);
             return false;
         }
     }
