@@ -1,4 +1,4 @@
-import static RegexHomework.RegexTime.regexTime;
+import static regex.RegexTime.regexTime;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
