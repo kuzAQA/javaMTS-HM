@@ -3,16 +3,13 @@ package InterfaceHomework.Task_1;
 public class CelsiusConvert implements CelsiusConvertTo {
 
     @Override
-    public double celsiusToKelvin(double celsius) {
-        double CONST = 274.15;
-        return celsius + CONST;
+    public double celsiusTo(double celsius, String scale) {
+        if (scale.equals("K")) {
+            return celsius + 273.15;
+        } else if (scale.equals("F")) {
+            return celsius * 9 / 5 + 32;
+        } else {
+            throw new IllegalArgumentException("Невалидный параметр градусов: " + scale);
+        }
     }
-
-    @Override
-    public double celsiusToFahrenheit(double celsius) {
-        double COEFFICIENT = 1.8;
-        double CONST = 32;
-        return (celsius * COEFFICIENT) + CONST;
-    }
-
 }
